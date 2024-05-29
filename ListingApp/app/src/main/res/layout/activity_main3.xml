@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@drawable/background"
+    >
+
+    <CheckBox
+        android:id="@+id/checkBoxPago"
+        android:layout_width="102dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/brock_restar"
+        android:padding="0dp"
+        android:text="Pagada"
+        android:textColor="#49454F"
+        app:layout_constraintStart_toEndOf="@+id/butFecha"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etObs"
+        android:inputType="textMultiLine"
+        android:layout_width="932dp"
+        android:layout_height="443dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/border"
+        android:padding="20dp"
+        android:ems="10"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:hint="Sin Observaciones"
+        android:textColor="#49454F"
+        android:fontFamily="@font/santello"
+        android:textCursorDrawable="@drawable/caret"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/butGuardarCita"
+        android:layout_width="151dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/brock_restar"
+        android:gravity="center"
+        android:text="GUARDAR"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etObs" />
+
+    <TextView
+        android:id="@+id/butAtras2"
+        android:layout_width="151dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/brock_restar"
+        android:gravity="center"
+        android:text="ATRÁS"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/butGuardarCita"
+        app:layout_constraintTop_toBottomOf="@+id/etObs" />
+
+    <TextView
+        android:id="@+id/butEliminarCita"
+        android:layout_width="151dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="428dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/brock_restar"
+        android:gravity="center"
+        android:text="Eliminar\nCita"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/butAtras2"
+        app:layout_constraintTop_toBottomOf="@+id/etObs" />
+
+    <TextView
+        android:id="@+id/butFecha"
+        android:layout_width="185dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="564dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/border_element_cita"
+        android:fontFamily="@font/brock_restar"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+    >
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="1130dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/brock_restar"
+        android:gravity="bottom"
+        android:text="LISTA DE PACIENTES"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="LISTA DE PACIENTES" />
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="1130dp"
+        android:layout_height="503dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="scroll element"
+        android:fadeScrollbars="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+        <LinearLayout
+            android:id="@+id/ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/buscador"
+        android:layout_width="846dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="@font/brock_restar"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/botonAgregarPaciente"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+    <TextView
+        android:id="@+id/botonAgregarPaciente"
+        android:layout_width="151dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="AGREGAR\nPACIENTE"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/brock_restar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="57dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/titulo"
+        app:layout_constraintTop_toTopOf="@+id/titulo"
+        app:srcCompat="@drawable/alien" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
